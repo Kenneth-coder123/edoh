@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - DEH BTP</title>
+        <!-- BUG CORRIGÉ : ajout de dehbtp.css pour avoir les variables CSS (--white, --primary-color...) -->
+        <link rel="stylesheet" href="dehbtp.css">
+        <link rel="stylesheet" href="Page.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><span>DEH</span> BTP</div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projets.html">Projets</a></li>
+                    <li><a href="Contacts.html" class="btn-contact">Devis gratuit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contact-container">
+            <br><br><br><br>
+            <h2>Contactez-nous</h2>
+            <form class="contact-form" action="mailto:kennykokodoko0@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <!-- BUG CORRIGÉ : <select> manquait l'attribut name → les données n'étaient pas envoyées -->
+                <select name="type_projet">
+                    <option value="">Type de projet</option>
+                    <option value="construction">Construction</option>
+                    <option value="renovation">Rénovation</option>
+                </select>
+                <textarea name="message" placeholder="Décrivez votre projet" rows="5" required></textarea>
+                <button type="submit" class="btn-main">Envoyer la demande</button>
+            </form>
+        </section>
+    </body>
+</html>

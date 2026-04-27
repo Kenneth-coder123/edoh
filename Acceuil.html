@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - DEH BTP</title>
+        <!-- BUG CORRIGÉ : dehbtp.css en minuscules (DEHBTP.CSS cassait sur Linux/serveur) -->
+        <link rel="stylesheet" href="dehbtp.css">
+        <link rel="stylesheet" href="Page.css">
+    </head>
+    <body>
+        <!-- BUG CORRIGÉ : ajout de la nav pour cohérence avec les autres pages -->
+        <header>
+            <nav>
+                <div class="logo"><span>DEH</span> BTP</div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projets.html">Projets</a></li>
+                    <li><a href="Contacts.html" class="btn-contact">Devis gratuit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="lael">
+            <h2>Bienvenue sur le site de <span style="color: var(--primary-color);">DEH BTP</span></h2>
+            <!-- BUG CORRIGÉ : menu1/menu2/menu3 n'existaient pas en CSS → remplacé par class="menu" -->
+            <div class="menu">
+                <a href="Services.html">Nos services</a>
+                <a href="Projets.html">Nos projets</a>
+                <a href="Contacts.html">Nous contacter</a>
+            </div>
+        </section>
+    </body>
+</html>

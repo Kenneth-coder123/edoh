@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEH BTP</title>
+        <link rel="stylesheet" href="dehbtp.css">
+        <!-- BUG CORRIGÉ : URL Google Fonts était cassée ("  https//" → "https://") -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><span>DEH</span> BTP</div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projets.html">Projets</a></li>
+                    <li><a href="Contacts.html" class="btn-contact">Devis gratuit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Acceuil" class="hero">
+            <div class="hero-content">
+                <!-- BUG CORRIGÉ : "civi" → "civil" -->
+                <h1>Bâtir l'avenir avec <span>rigueur</span></h1>
+                <p>Expertise en gros œuvre, rénovation et génie civil depuis plus de 10 ans</p>
+                <div class="hero-btns">
+                    <a href="Services.html" class="btn-main">Nos réalisations</a>
+                    <a href="Projets.html" class="btn-sub">Découvrir nos projets</a>
+                </div>
+            </div>
+        </section>
+        <section id="Services" class="services">
+            <h2>Nos services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon">🏗️</div>
+                    <h3>Gros œuvre</h3>
+                    <p>Fondations solides et structures durables pour tous types de bâtiments</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🔨</div>
+                    <h3>Rénovation</h3>
+                    <p>Modernisation complète de vos espaces intérieurs et extérieurs</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">📐</div>
+                    <h3>Bureau d'Études</h3>
+                    <p>Conception technique et suivi de chantier rigoureux</p>
+                </div>
+            </div>
+        </section>
+    </body>
+    <!-- BUG CORRIGÉ : <footer> doit être DANS <body>, pas après </body> -->
+    <footer>
+        <section id="Contacts" class="hero">
+            <div class="hero-content">
+                <h1>Pour nous <span>contacter</span></h1>
+                <p>N'ayez crainte de rien avec DEH BTP</p>
+                <div class="hero-btns">
+                    <a href="Contacts.html" class="btn-sub">Envoyer une demande</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</html>
